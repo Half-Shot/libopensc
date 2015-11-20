@@ -1,5 +1,4 @@
-
-//Please be aware these are guesses. I provide no guarantee.
+Please be aware these are guesses. I provide no guarantee.
 
 ```
 0-1 = Signature "01 00"
@@ -12,7 +11,7 @@
 17-18 = Right Trigger Intensity
 ```
 
-[1]
+## Button Bitfield
 ```
 Y                       = 100000
 B                       = 200000
@@ -38,4 +37,6 @@ Right Back Trigger      = 000001
 Left Joystick click     = 000002
 ????                    = 000004
 Left haptic in use      = 000008
+Left trig intensity     = 000000XX
+Right trig intensity    = 00000000XX
 ```
