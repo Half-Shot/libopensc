@@ -1,12 +1,19 @@
 
 //Please be aware these are guesses. I provide no guarantee.
+
+```
 0-1 = Signature "01 00"
 4-5 = Packet Type
       01 3c - Data
       04 0b - Periodic
 5-8 = Packet Number
-9+  = Big ol bitfield (see below)
+9-14  = Button Bitfield [1]
+15-16 = Left Trigger Intensity
+17-18 = Right Trigger Intensity
+```
 
+[1]
+```
 Y                       = 100000
 B                       = 200000
 X                       = 400000
@@ -24,8 +31,11 @@ Left Back Trigger       = 008000
 ????                    = 000400
 ????                    = 000800
 Right haptic in use     = 000010
+????                    = 000020
+????                    = 000040
+????                    = 000080
 Right Back Trigger      = 000001
 Left Joystick click     = 000002
+????                    = 000004
 Left haptic in use      = 000008
-Left trig intensity     = 000000XX
-Right trig intensity    = 00000000XX
+```
